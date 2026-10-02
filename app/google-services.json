@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "764364074626",
+    "project_id": "campussync-7ec38",
+    "storage_bucket": "campussync-7ec38.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764364074626:android:22ca1952edee4d4fb90e9b",
+        "android_client_info": {
+          "package_name": "ue.edu.campussync"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASXI62nZP533jBRpAAMU8_OsYYdFgTTvo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

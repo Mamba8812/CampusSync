@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Contenedor principal del formulario de tareas -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:ignore="HardcodedText, Autofill">
+
+    <!-- 1. Título de la Tarea (Se mantiene igual) -->
+    <EditText
+        android:id="@+id/etTituloTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Título de la tarea"
+        android:inputType="text"
+        android:layout_marginBottom="10dp" />
+
+    <!-- 2. Descripción (Se mantiene igual) -->
+    <EditText
+        android:id="@+id/etDescripcionTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Descripción detallada"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:layout_marginBottom="10dp" />
+
+    <!-- NUEVO: Título para indicar qué es el menú desplegable de Materia -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Materia:"
+        android:textSize="12sp"
+        android:textColor="#A0AAB2" />
+
+    <!-- 3. NUEVO: Spinner (Menú desplegable) para elegir la Materia -->
+    <Spinner
+        android:id="@+id/spMateriaTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- 4. Fecha de Vencimiento MODIFICADA -->
+    <!-- Agregamos focusable="false" y cursorVisible="false" para que el teclado no suba.
+         Solo reaccionará al clic abriendo el calendario. -->
+    <EditText
+        android:id="@+id/etFechaVencimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Toca para elegir fecha"
+        android:focusable="false"
+        android:cursorVisible="false"
+        android:layout_marginBottom="10dp" />
+
+    <!-- NUEVO: Título para indicar qué es el menú desplegable de Estado -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado:"
+        android:textSize="12sp"
+        android:textColor="#A0AAB2" />
+
+    <!-- 5. NUEVO: Spinner (Menú desplegable) para elegir el Estado -->
+    <Spinner
+        android:id="@+id/spEstadoTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp" />
+
+</LinearLayout>

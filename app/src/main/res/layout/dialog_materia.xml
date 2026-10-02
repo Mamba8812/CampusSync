@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#05131C"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gestión de Materia"
+        android:textColor="#38B6FF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etNombreMateria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de la materia"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:inputType="text"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etNombreProfesor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del profesor"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:inputType="text"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etFechaInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de inicio (Ej: 2026-02-01)"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:inputType="text"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etFechaFinal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha final (Ej: 2026-06-01)"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:inputType="text"
+        android:layout_marginBottom="12dp"/>
+
+</LinearLayout>

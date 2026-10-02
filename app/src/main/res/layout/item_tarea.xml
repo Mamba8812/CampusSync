@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tarjeta principal que envuelve cada elemento de la lista. Le damos un fondo oscuro y bordes redondeados (si tienes un drawable para eso) -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardBackgroundColor="#1E2A38"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <!-- Contenedor interno para organizar los textos uno debajo de otro -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 1. Título de la Tarea (Texto grande y azul) -->
+        <TextView
+            android:id="@+id/tvTituloTarea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Título"
+            android:textColor="#38B6FF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- 2. Descripción de la Tarea (Texto blanco y un poco más pequeño) -->
+        <TextView
+            android:id="@+id/tvDescripcionTarea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Descripción"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <!-- Contenedor horizontal para agrupar Fecha y Estado en la misma línea -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <!-- 3. Fecha de Vencimiento (Gris claro, ocupa el espacio sobrante con layout_weight="1") -->
+            <TextView
+                android:id="@+id/tvFechaVencimiento"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Vence: YYYY-MM-DD"
+                android:textColor="#A0AAB2"
+                android:textSize="12sp" />
+
+            <!-- 4. Estado de la Tarea (Alineado a la derecha) -->
+            <TextView
+                android:id="@+id/tvEstadoTarea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado"
+                android:textColor="#38B6FF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

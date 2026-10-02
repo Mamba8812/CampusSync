@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CampusSync</string>
+
+    <!--pantalla de login-->
+    <string name="tvTitleLogin">Inicia Sesión en\nCampusSync</string>
+    <string name="etEmail">Correo Institucional</string>
+    <string name="EtPassword">Contraseña</string>
+    <string name="btnLogin">Entrar</string>
+    <string name="tvNoCuenta">¿No tienes cuenta? </string>
+    <string name="tvRegistrarse">Regístrate.</string>
+    <string name="tvOlvidoPassword">¿Olvidaste tu contraseña?</string>
+
+
+    <string name="tvTitleRegister">Crea tu cuenta en\nCampusSync</string>
+    <string name="etRegisterEmail">Correo institucional</string>
+    <string name="etConfirmPassword">Confirmar Contraseña</string>
+    <string name="btnRegister">Registrarse</string>
+    <string name="tvYaCuenta">¿Ya tienes cuenta? </string>
+    <string name="tvIniciaSesion">Inicia sesión.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

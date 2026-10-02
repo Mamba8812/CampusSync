@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center"
+    android:background="#0F2836">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo_buho"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/tvTitleRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvTitleRegister"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginBottom="32dp" />
+
+    <EditText
+        android:id="@+id/etRegisterEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/etEmail"
+        android:textColorHint="#A0A0A0"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#167984"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etRegisterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/EtPassword"
+        android:textColorHint="#A0A0A0"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#167984"
+        android:inputType="textPassword"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/etConfirmPassword"
+        android:textColorHint="#A0A0A0"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#167984"
+        android:inputType="textPassword"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/btnRegister"
+        android:backgroundTint="#167984"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvYaCuenta"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tvIniciaSesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvIniciaSesion"
+            android:textColor="#38B6FF"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

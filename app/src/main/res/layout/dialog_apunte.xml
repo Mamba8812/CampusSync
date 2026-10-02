@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#05131C"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/TituloApunte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Nuevo Apunte de Clase"
+        android:textColor="#38B6FF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar Materia:"
+        android:textColor="#A0A0A0"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerMateriasApunte"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#1A1A1A"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etTituloApunte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título del apunte"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:inputType="text"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etContenidoApunte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribe tus notas aquí..."
+        android:textColor="#FFFFFF"
+        android:textColorHint="#808080"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Botón para adjuntar foto mediante la cámara -->
+    <Button
+        android:id="@+id/btnTomarFotoDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#167984"
+        android:text="Tomar Foto al Tablero"
+        android:textColor="#FFFFFF"/>
+
+    <!-- Vista previa de la foto capturada en el diálogo -->
+    <ImageView
+        android:id="@+id/ivPreviewDialog"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"/>
+
+</LinearLayout>
